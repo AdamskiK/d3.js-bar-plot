@@ -211,7 +211,7 @@ function plot(params){
 	this.selectAll(".bar")
 		.transition()
 		.duration(500)
-		.ease("bounce")
+		.ease("ease-out")
 		.delay(500)
 		.attr("x", function(d,i){
 			return x(d.key);
@@ -233,7 +233,7 @@ function plot(params){
 	this.selectAll('.bar-label')
 		.transition()
 		.duration(500)
-		.ease("bounce")
+		.ease("ease-out")
 		.delay(500)
 		.attr("x", function(d,i){
 				return x(d.key) + (x.rangeBand()/2)
