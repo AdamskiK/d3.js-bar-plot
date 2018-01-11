@@ -152,7 +152,7 @@ function drawAxis(params){
 		this.selectAll("g.x.axis")
 			.transition()
 			.duration(500)
-			.ease("bounce")
+			.ease("ease-out")
 			.delay(500)
 			.call(params.axis.x);
 		this.selectAll(".x-axis-label")
@@ -163,7 +163,7 @@ function drawAxis(params){
 		this.selectAll("g.y.axis")
 			.transition()
 			.duration(500)
-			.ease("bounce")
+			.ease("ease-out")
 			.delay(500)
 			.call(params.axis.y);
 	}
